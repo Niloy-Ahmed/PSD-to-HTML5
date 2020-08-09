@@ -1,0 +1,18 @@
+ @media screen and (max-width:1200px){
+     .row{
+         width: 100%;
+         padding: 0 30px;
+     }
+ }
+ @media screen and (max-width:1124px){
+     section{
+         width: 100%;
+     }
+     .grid-proccess-container{
+        grid-template-columns: repeat(2, 1fr)
+     }
+     .pual{
+         height: 100%;
+     }
+ }
+ 

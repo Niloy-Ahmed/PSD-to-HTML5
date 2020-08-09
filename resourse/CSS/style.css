@@ -1,0 +1,361 @@
+/* ----CSS index------
+Templete Name : Abidur Rahman portfolio
+Templet Url :
+Description : An awsome portfolio Templete
+Support : niloybdesh@gmail.com
+Author  : A R NILOY SUMON
+Varsion : 1.0
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+/* common Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html and body defult css  */
+html, body {
+    background-color: #ffffff;
+    color: #000000;
+    font-style: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Raleway' ;
+    font-weight: 700;
+    font-size: 650%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+/* Reuseble section */
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+section{
+    padding: 120px 0 0 0;
+}
+h1,h2,h3,h4{
+    font-family: Ralway;
+}
+h2{
+    font-size: 400%;
+}
+h3{
+    font-size: 260%;
+    margin-bottom: 45px;
+}
+h4{
+    font-size: 160%;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title p {
+    font-size: 16px;
+    color: #6f6f6f;
+    margin-top: 20px;
+}
+.btn:link, 
+.btn:visited,
+.btn{
+    width: 203px;
+    background: #ff2b4a;
+    color: #fff;
+    display: inline-block;
+    font-size: 160%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 160;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #ff2b4a;
+    transition: .5s;
+    cursor: pointer;
+}
+.btn:hover, 
+.btn:active{
+    background: transparent;
+    color: #ff2b4a;
+}
+/* Header section hero background */
+#hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/main-background.jpg) no-repeat center / cover;
+}
+.logo{
+    float: left;
+    height: 45px;
+    margin-top: 45px;
+}
+.nav-icon{
+    color: #fff;
+    float: right;
+    margin-top: 45px;
+}
+.nav-icon ion-icon{
+    font-size: 40px;
+    border: 1px solid #fff;
+}
+.hero-text-box{
+    width: 1180px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1::before{
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+}
+h1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+.hero-text-box span{
+    font-style: 'Roboto';
+    font-size: 230%;
+    color: #fff;
+}
+/* about part design */
+.grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+}
+.pual{
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.intro{
+    font-size: 180%;
+    color: #222;
+    font-weight: 700;
+}
+.description{
+    font-size: 160%;
+    color: #222;
+    margin: 30px 0;
+    width: 90%;
+}
+/* Proccess part design */
+#proccess{
+    background: #eaeaea;
+    padding-bottom: 120px;
+}
+.grid-proccess-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+    text-align: center;
+}
+.grid-proccess-items{
+    padding: 80px;
+}
+.grid-proccess-items ion-icon{
+    font-size: 450%;
+    margin-bottom: 30px;
+}
+.grid-proccess-items:nth-child(1){
+    background: #10c6fc;
+}
+.grid-proccess-items:nth-child(2){
+    background: #835aeb;
+}
+.grid-proccess-items:nth-child(3){
+    background:#002453 ;
+}
+.grid-proccess-items:nth-child(4){
+    background: #ff2b4a;
+}
+/* Education */
+#experience{
+    background: url(./img/pexels-anthony-shkraba-4348404.jpg) no-repeat center/ cover;
+    color : #fff;
+    padding-bottom: 120px;
+    background-attachment: fixed;
+}
+.grid-experience-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.grid-experience-items,
+.grid-education-items{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 45px 30px;
+}
+.job h4,
+.education h4{
+    font-size: 180%;
+}
+.job span,
+.education span{
+    font-size: 160%;
+    margin: 10px 0;
+    display: inline-block;
+}
+.job p,
+.education p{
+    font-size: 160%;
+}
+#experience hr{
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin: 30px 0;
+}
+/* my project process part start */
+#portfolio{
+    padding-bottom: 120px;
+}
+.grid-portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(250px ,auto);
+}
+.grid-portfolio-items:nth-child(1){
+    background: url(./img/p5.jpg) no-repeat center /cover;
+}
+.grid-portfolio-items:nth-child(2){
+    background: url(./img/p2.jpg) no-repeat center /cover;
+}
+.grid-portfolio-items:nth-child(3){
+    background: url(./img/p1.jpg) no-repeat center /cover;
+}
+.grid-portfolio-items:nth-child(4){
+    background: url(./img/p4.jpg) no-repeat center /cover;
+}
+.grid-portfolio-items:nth-child(5){
+    background: url(./img/p6.jpg) no-repeat center /cover;
+    grid-column: 1/3;
+}
+.grid-portfolio-items:nth-child(6){
+    background: url(./img/p3.jpg) no-repeat center /cover;
+}
+.grid-portfolio-items:nth-child(7){
+    background: url(./img/p7.jpg) no-repeat center /cover;
+}
+/* testimonial part */
+#testimonial{
+    background: url(./img/p4.jpg) no-repeat center / cover;
+    padding-bottom: 120px;
+    color: #fff;
+    margin-bottom: 120px;
+}
+.grid-testmonial-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+.quote img{
+    height: 35px;
+}
+#testimonial p{
+    margin: 45px 0;
+    font-size: 160%;
+}
+.signeture img{
+    height: 45px;
+}
+#testimonial span{
+    tab-size: 140%;
+}
+/* Contact part section Css */
+#contact{
+    background: url(./img/contact.jpg) no-repeat center / cover;
+    padding: 120px 0;
+    color: #fff;
+}
+.grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.grid-contact-items:nth-child(1){
+    background: rgba(0, 0, 0, 0.8);
+    padding: 45px 30px;
+}
+.single-items input[type="text"],
+.single-items input[type="email"],
+.single-items input[type="subject"],
+.single-items textarea{
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 140%;
+    background: transparent;
+
+}
+.single-items-btn{
+    text-align: right;
+    margin-top: 30px;
+}
+.nested-grid-contact-containe{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+.nested-grid-contact-items{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 45px 30px;
+    margin: 0 0 10px 0;
+}
+.nested-grid-contact-items p{
+    font-size: 160%;
+    color: #fff;
+
+}
+/* footer */
+#footer{
+    background: #222;
+    padding: 60px 0;
+    text-align: center;
+}
+.social-icon ul li a ion-icon{
+    color: #fff;
+    font-size: 200%;
+    border: 1px solid #fff;
+}
+ul li {
+    list-style: none;
+}
+.social-icon ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.social-icon ul li:hover a ion-icon{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.social-icon{
+    margin-bottom: 15px;
+}
+.copyright{
+    font-size: 200%;
+    color: #fff;
+}
