@@ -9,33 +9,50 @@
     <!--favicon-->
     <link rel="shortcut icon" href="./resourse/img/favicon.png" type="image/x-icon">
     <!--css file-->
+    <link rel="stylesheet" href="./vendors/css/uikit.min.css">
     <link rel="stylesheet" href="./vendors/css/normalize.css">
     <link rel="stylesheet" href="./resourse/CSS/style.css">
     <link rel="stylesheet" href="./resourse/CSS/queres.css">
 </head>
 <body>
     <!-- start header section  -->
-    <header id="hero">
+    <header id="hero" class="hero">
         <nav>
             <div class="row">
                 <img class="logo" src="./resourse/img/logo.png" alt="logo">
-                <a class="nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
+                <a onclick="openMenu()" class="nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <div class="menu-container" id="navbar" onclick="closeMenu()">
+                <div class="close-btn" onclick="closeMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a onclick="closeMenu()" href="#hero">Home</a></li>
+                        <li><a onclick="closeMenu()" href="#about">About</a></li>
+                        <li><a onclick="closeMenu()" href="#proccess">Proccess</a></li>
+                        <li><a onclick="closeMenu()" href="#experience">Experience</a></li>
+                        <li><a onclick="closeMenu()" href="#portfolio">Portfolio</a></li>
+                        <li><a onclick="closeMenu()" href="#testimonial">Testimonial</a></li>
+                        <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Paul Lapkin</h1><br>
-            <span>#User Experience  #Music  #Creative Direction</span>
+            <h1  class="uk-animation-slide-bottom-medium" >Paul Lapkin</h1><br>
+            <span  class="uk-animation-slide-bottom-medium">#User Experience  #Music  #Creative Direction</span>
         </div>
     </header>
     <!-- end header section -->
     <!-- Start  About section -->
-    <section id="about">
+    <section id="about" class="hero">
         <div class="row">
             <div class="grid-about-container">
-                <div class="grid-about-items">
+                <div class="grid-about-items" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" >
                     <img class="pual" src="./resourse/img/pexels-min-an-1009904.jpg" alt="Girls">
                 </div>
-                <div class="grid-about-items">
+                <div class="grid-about-items" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                     <p class="intro">Hi, I'm Pual Nepkin, Experience crafter from canada</p>
                     <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat. <br><br> Duis autem vel eum iriure dolorin hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.</p>
                     <div class="about-ctn-btn">
@@ -47,7 +64,7 @@
     </section>
     <!-- end About section -->
     <!-- Start proccess section -->
-    <section id="proccess">
+    <section id="proccess" class="hero">
         <div class="row">
             <div class="section-title">
                 <h2>My Working Proccess</h2>
@@ -75,7 +92,7 @@
     </section>
     <!-- end proccess section -->
     <!-- Start experience section -->
-    <section id="experience">
+    <section id="experience" class="hero">
         <div class="row">
             <div class="grid-experience-container">
                 <div class="grid-experience-items">
@@ -101,7 +118,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                 </div>
                 <hr>
-                <div class="education">
+                <div class="education" class="hero">
                     <h4>Crazy Design</h4>
                     <span>OCT 2013 - june 2014</span>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -112,26 +129,54 @@
     </section>
     <!-- end experience section -->
     <!-- First Portfolio section -->
-    <section id="portfolio">
+    <section id="portfolio" class="hero">
         <div class="row">
             <div class="section-title">
                 <h2>My Projects Proccess</h2>
                 <p>Hi, I'm Pual Nepkin, Experience crafter from canada</p>
             </div>
-            <div class="grid-portfolio-container">
-                <div class="grid-portfolio-items"></div>
-                <div class="grid-portfolio-items"></div>
-                <div class="grid-portfolio-items"></div>
-                <div class="grid-portfolio-items"></div>
-                <div class="grid-portfolio-items"></div>
-                <div class="grid-portfolio-items"></div>
-                <div class="grid-portfolio-items"></div>
+            <div class="grid-portfolio-container" uk-lightbox="animation: slide">
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p1.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p2.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p3.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p4.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p6.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p5.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-portfolio-items">
+                    <a href="./resourse/CSS/img/p7.jpg" data-caption="Caption 1" >
+                        <img src="./resourse/CSS/img/p7.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <!-- end Portfolio section -->
     <!-- Start TESTIMONIAL section -->
-    <section id="testimonial">
+    <section id="testimonial" class="hero">
         <div class="row">
             <div class="grid-testmonial-container">
                 <div class="grid-testimonial-items">
@@ -150,7 +195,7 @@
     </section>
     <!-- end TESTIMONIAL section -->
     <!-- START CONTACT section -->
-    <section id="contact">
+    <section id="contact" class="hero">
         <div class="row">
             <div class="grid-contact-container">
                 <div class="grid-contact-items">
@@ -194,7 +239,7 @@
     </section>
     <!-- end CONTACT section -->
     <!-- Start Footer section -->
-    <footer id="footer">
+    <footer id="footer" class="hero">
         <div class="row">
             <div class="social-icon">
                 <ul>
@@ -207,12 +252,23 @@
             <div class="copyright">
                 <small>copyright: Abidur Rahman , All Right Reserved</small>
             </div>
+            <div class="totop">
+                <span style="font-size: 25px;">Top</span>
+                <a href="#" uk-totop uk-scroll></a>
+            </div>
         </div>
     </footer>
     <!-- end Footer section -->
 
     <!-- js file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./vendors/js/uikit-icons.min.js"></script>
+    <script src="./vendors/js/uikit.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="./vendors/js/particles.min.js"></script>
+    <script src="./vendors/js/app.js"></script>
+    <script src="./vendors/js/jquery.scrollify.js"></script>
+    <script src="./resourse/js/script.js"></script>
 
 </body>
 </html>

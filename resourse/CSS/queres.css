@@ -3,8 +3,14 @@
          width: 100%;
          padding: 0 30px;
      }
+     .hero-text-box {
+         width: 100%;
+     }
  }
  @media screen and (max-width:1124px){
+    .hero-text-box {
+        width: 100%;
+    }
      section{
          width: 100%;
      }
@@ -16,3 +22,20 @@
      }
  }
  
+ @media screen and (max-width:768px){
+     .hero-text-box{
+         width: 100%;
+     }
+ }
+ @media screen and (max-width:480px){
+    .grid-portfolio-container {
+        grid-template-columns:repeat(1fr)
+    }
+    .hero-text-box{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+    
+}
